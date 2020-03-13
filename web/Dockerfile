@@ -16,10 +16,6 @@ EXPOSE 80 443
 VOLUME ["/config", "/etc/letsencrypt"]
 
 # Copy the modified app bundle
-COPY custom/watermark.png /usr/share/jitsi-meet/images/watermark.png
-COPY custom/favicon.ico /usr/share/jitsi-meet/favicon.ico
-COPY custom/favicon.ico /usr/share/jitsi-meet/images/favicon.ico
-COPY custom/app.bundle.min.js /usr/share/jitsi-meet/libs/app.bundle.min.js
 
 # COPY custom/index.html /usr/share/jitsi-meet/index.html
 # COPY custom/all.css /usr/share/jitsi-meet/css/all.css
